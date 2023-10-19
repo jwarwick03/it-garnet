@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intro to HTML</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is the elevator pitch for site" />
+  <meta name="Author" content="Joel Warwick" />
+</head>
+
+<body>
+  <h1>HTML5 Reference Document</h1>
+  <section id="forms">
+    <h2 class="section-heading">Forms</h2>
+    <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Full Name" />
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <label for="cmf">Favorite Car Manufacturer</label>
+        <select id="cmf" name="cmf">
+          <option selected value="null">Select Below</option>
+          <option value="f">Ford</option>
+          <option value="h">Honda</option>
+          <option value="t">Toyota</option>
+          <option value="n">Nissan</option>
+        </select>
+        <input type="submit" value="take me to your leader" />
+      </fieldset>
+    </form>
+  </section>
+  <section id="headings">
+    <h2 class="section-heading">Heading</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </section>
+  <section id="text-based-semantics">
+    <h2 class="section-heading">Text Based Semantics</h2>
+    <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing elit.</em> Error quasi, fuga incidunt <strong>exercitationem eius</strong> blanditiis quibusdam ut cumque reiciendis quae quo adipisci assumenda, quam maxime voluptatibus provident dignissimos. Quasi, eaque.</p>
+    <address>
+      Joel Warwick<br />
+      555 Easy st.<br />
+      Little Rock, AR, 72204
+    </address>
+  </section>
+  <section id="table">
+    <h2 class="section-heading">Table</h2>
+    <table border="1">
+      <caption>Grocery List</caption>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Cost</th>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+      <tr>
+        <td>Chicken</td>
+        <td>5</td>
+        <td>7.99</td>
+      </tr>
+      <tr>
+        <td>Bread</td>
+        <td>6</td>
+        <td>2.50</td>
+      </tr>
+    </table>
+  </section>
+  <section id="lists">
+    <h2 class="section-heading">Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+    <h3>Definition List</h3>
+    <dl>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+    </dl>
+    <h3>Nested List</h3>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+  </section>
+  <section id="hyperlinks">
+    <h2 class="section-heading">Hyperlinks</h2>
+    <ul>
+      <li><a href="http://ualr.edu" target="_blank">Absolute Link</a></li>
+      <li><a href="file.html" title="Relative Link Example">Relative Link</a></li>
+      <li><a href="#headings">Anchor Link</a></li>
+      <li><a href="mailto:email@address.com">Email Link</a></li>
+    </ul>
+  </section>
+  <section id="quotes">
+    <h2 class="section-heading">Quotes</h2>
+    <h3>Blockquote<h3>
+        <blockquote>Guard your heart above all else, for it determines the course of
+          your life. <cite>Proverbs 4:23</cite>
+        </blockquote>
+        <h3>Inline Quote</h3>
+        <p><q>I want to win</q>said Nacho Libre.</p>
+  </section>
+  <section id="images">
+    <h2 class="section-heading">Images</h2>
+    <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo" />
+  </section>
+  <section id="structural-elements">
+    <h2 class="section-heading">Structural Elements</h2>
+    <code>&it;div&it;</code>
+    <code>&it;span&it;</code>
+    <code>&it;main&it;</code>
+    <code>&it;section&it;</code>
+    <code>&it;nav&it;</code>
+    <code>&it;article&it;</code>
+    <code>&it;aside&it;</code>
+    <code>&it;header&it;</code>
+    <code>&it;footer&it;</code>
+    <code>&it;figure&it;</code>
+    <code>&it;figcaption&it;</code>
+  </section>
+
+</body>
+
+</html>
