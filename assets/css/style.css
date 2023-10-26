@@ -1,0 +1,37 @@
+/*  ----------   Course Homepage Stylesheet   ----------     */
+
+/* Color Theme Swatches in Hex */
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-hex { color: #127369; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-hex { color: #10403B; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-hex { color: #8AA6A3; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-hex { color: #637371; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; }
+
+
+
+/* Type Selector */
+body {
+    background-color: #BFBFBF;
+}
+
+/* ID Selector */
+
+#main-heading {
+    color: #10403B;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 1px 1px #000;
+}
+
+
+/* Class Selector */
+
+.primary {
+    border: 2px solid #637371;
+    padding: 10px;
+}
+
+/* --- psuedo selector --- */
+
+a:link, a:visited{
+    color: #127369;
+}
