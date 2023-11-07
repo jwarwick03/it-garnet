@@ -1,0 +1,32 @@
+/* Color Theme Swatches in Hex
+{ color: #127369; }
+{ color: #10403B; }
+{ color: #8AA6A3; }
+{ color: #637371; }
+{ color: #BFBFBF; }
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* ---------------Global Styles----------------- */
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #127369;
+  }
+
+  main {
+    background-color:#BFBFBF;
+    width: 80vw;
+    margin: 40px auto;
+    border: 2px solid #637371;
+    border-radius: 12px;
+  }
