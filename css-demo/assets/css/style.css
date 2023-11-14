@@ -23,6 +23,13 @@ html {
   padding:40px;
 }
 
+/* ---------------Responsive Images----------------- */
+
+img{
+  max-width: 100%;
+  height:auto;
+}
+
 
 /* ---------------Global Styles----------------- */
 
@@ -103,3 +110,65 @@ html {
     padding:7.5px;
   }
 
+#blog.container{
+  background-color: #8AA6A3;
+  padding: 20px 10px;
+  border-top: 2px double #10403B;
+}
+
+#blog > h2{
+  color:#fff;
+  text-shadow: 2px 2px #000;
+  font-size: 1.8rem;
+  margin-left:20px;
+}
+
+article.post{
+  background-color:#fff;
+  margin:20px;
+  padding:20px;
+  border-radius:25px;
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+  "figure header"
+  "figure post-content"
+  "figure footer";
+  grid-gap:20px;
+}
+
+article.post figure{
+  grid-area:figure;
+  margin:0;
+}
+
+article.post header{
+  grid-area:header;
+}
+
+article.post .post-content{
+  grid-area:post-content;
+}
+
+article.post .post-meta{
+  grid-area:footer;
+}
+
+aside .container{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap:20px;
+}
+
+aside .widget:first-of-type{
+  border-right: 1px dotted #10403B;
+  padding-right: 20px;
+}
+
+#colophon{
+  text-align: center;
+  background-image: url(https://assets.codepen.io/7248/bg_1.png);
+  background-size:cover;
+  padding:20px;
+  color:#fff;
+}
