@@ -5,45 +5,61 @@
 <style>
     .formlabel {
         display: inline-block;
-        width: 150px;
+        width: 100px;
         text-align: right;
         padding: 5px;
         font-weight: bold;
     }
+
+	.error {
+        color: red;
+        padding-left: 5px;
+   }
 </style>
 </head>
 
 <body>
-<form id="SubmitExampleForm"  class="formlabel" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
-    <label class="formlabel" for="fname">First Name: </label>
-    <input type="text" id="fname" name="FirstName" size="30" maxlength="30">
+<form id="EmployeeForm"  action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+    <label class="formlabel" for="FirstName">First Name: </label>
+    <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
+	data-rule-required="true"  data-msg-required="First Name is Required" >
+<label for="FirstName" class="error"></label>
+	<br>
+
     
     <label class="formlabel" for="minitial">Middle Initial: </label>
     <input type="text" id="minitial" name="MiddleInitial" size="1" maxlength="1">
-
-    <label class="formlabel" for="lname">Last Name: </label>
-    <input type="text" id="lname" name="LastName" size="30" maxlength="30">
-
-    <label class="formlabel" for="email">Email: </label>
-    <input type="text" id="email" name="Email" size="30" maxlength="30">
-
+<br>
+	<label for="LastName" class="formlabel">Last Name: </label>
+	<input type="text" id="LastName" name="LastName" size="30" maxlength="30"
+    data-rule-required="true"  data-msg-required="Last Name is Required" >
+	<label for="LastName" class="error"></label>
+	<br>
+    <label class="formlabel" for="Email">Email: </label>
+    <input type="text" id="Email" name="Email" size="30" maxlength="30"
+	data-rule-required="true"  data-msg-required="Email is Required" >
+	<label for="Email" class="error"></label>
+	<br>
     <label class="formlabel">Sex: </label>
-    <label for="male"><input type="radio" name="M" id="male" value="M">Male</label>
-    <label for="female"><input type="radio" name="F" id="female" value="F">Female</label>
-    <label for="n/a"><input type="radio" name="N" id="n/a" value="N">N/A</label>
-
+    <label for="male"><input type="radio" name="Sex" id="male" value="M">Male</label>
+    <label for="female"><input type="radio" name="Sex" id="female" value="F">Female</label>
+    <label for="n/a"><input type="radio" name="Sex" id="n/a" value="N"
+	data-rule-required="true"  data-msg-required="Sex is Required" />N/A</label>
+	<label for="Sex" class="error"></label>
+	<br>
     <label class="formlabel" for="birthday">Birthday: </label>
     <input type="text" id="birthday" name="Birthday" size="8" maxlength="8">
-
+	<br>
     <label class="formlabel" for="height">Height: </label>
     <input type="text" id="height" name="Height" size="3" maxlength="3">
-
+	<br>
     <label class="formlabel" for="weight">Weight: </label>
     <input type="text" id="weight" name="Weight" size="3" maxlength="3">
-
+	<br>
+	<hr>
     <label class="formlabel" for="phonenumber">Phone Number: </label>
     <input type="text" id="phonenumber" name="PhoneNumber" size="14" maxlength="14">
-
+	<br>
     <label class="formlabel">Marital Status: </label>
     <select name="MaritalStatus" id="maritalstatus">
     <option value="">Select an Status...</option>
@@ -51,10 +67,10 @@
     <option value="M">Married</option>
     <option value="L">Legally Separated</option>
     <option value="W">Windowed</option>
-
+	<br>
     <label class="formlabel" for="address">Address: </label>
     <input type="text" id="address" name="Address" size="30" maxlength="30">
-
+	<br>
     <label class="formlabel" for="citystatezip">City/State/Zip: </label>
     <input type="text" id="address" name="City" size="30" maxlength="30">
     <select name="State" id="state">
@@ -111,17 +127,28 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
     <input type="text" id="zip" name="Zip" size="5" maxlength="5">
-
+	<br>
+	<hr>
     <label class="formlabel">Taking Medications: </label>
     <label for="yes"><input type="radio" name="Yes" id="yes" value="Y">Yes</label>
     <label for="no"><input type="radio" name="No" id="no" value="N">No</label>
-
+	<br>
     <label class="formlabel" for="medlist">If yes, list medications here: </label>
     <input type="text" id="medlist" name="MedicationList" rows="3" cols="30">
+	<hr>
 
+	<input type="submit" value="Submit Patient Form" Name="submitpatientform">
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
 
 
+<script>
+	$( "#EmployeeForm" ).validate({
+	
+	});                    
+	</script>
 
 
 
