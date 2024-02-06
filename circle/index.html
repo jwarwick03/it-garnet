@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <form id="CircleForm">
+    <form id="CircleForm" onsubmit="return false">
         <h2>Circle Calculations</h2>
         <label for="radius" class="formlabel">Enter radius of a circle:</label>
         <input type="text" id="radius" name="radius"
@@ -44,9 +44,4 @@
         <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
     </form>
 </body>
-<script>
-$( "#CircleForm" ).validate({
-
-});
-</script>
 </html>

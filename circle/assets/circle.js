@@ -1,7 +1,6 @@
 $( "#CircleForm" ).validate({
 
 });
-
 function display() {
     if ($("#CircleForm").valid()) {
 
@@ -44,4 +43,3 @@ function display() {
     document.getElementById("circumference").innerHTML = "";
     document.getElementById("area").innerHTML = "";
 }
-
