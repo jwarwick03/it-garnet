@@ -1,0 +1,27 @@
+/* Color Pallet */
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------------Utility Classes----------------- */
+
+.container{
+    margin:auto;
+    padding:40px;
+  }
+  
+  /* ---------------Responsive Images----------------- */
+  
+  img{
+    max-width: 100%;
+    height:auto;
+  }
