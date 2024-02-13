@@ -35,3 +35,38 @@ body {
 a:link, a:visited{
     color: #127369;
 }
+
+main {
+    width:80vw;
+    margin:auto
+}
+
+#assignments {
+    display:flex;
+}
+
+h2 {
+    display:block;
+    
+}
+
+#thomas {
+    width: 50%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+#bruce {
+    width: 50%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #8AA6A3;
+    padding: 20px;
+    border-radius: 5px;
+}
