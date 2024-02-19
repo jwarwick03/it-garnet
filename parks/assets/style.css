@@ -1,4 +1,14 @@
-/* Color Pallet */
+/* Color Pallet 
+#FDB827   (Orange)
+#008061   (Green)
+#5C5B3D   (Grey)
+*/
+
+/* Fonts 
+font-family: "Inter", sans-serif;   (h1)
+font-family: "Noto Sans", sans-serif;  (p)
+font-family: "DM Sans", sans-serif;  (h2)
+*/
 
 
 /* ---------------Box Sizing----------------- */
@@ -16,7 +26,6 @@ html {
 
 .container{
     margin:auto;
-    padding:40px;
   }
   
   /* ---------------Responsive Images----------------- */
@@ -24,4 +33,64 @@ html {
   img{
     max-width: 100%;
     height:auto;
+  }
+
+  /* ----------------Body Style---------------- */
+
+  main {
+    width: 80vw;
+    margin:auto;
+    padding: 10px;
+    border: 1px solid #000;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #FDFBEE;
+  }
+
+  header.primary, #colophon {
+    grid-column: 1 / span 12;
+    background-color: #ECEADC;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav ul{
+    padding: 20px;
+    color: #008061;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav a{color: #008061;}
+
+  .primary h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.8rem;
+    color: #5C5B3D;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "DM Sans", sans-serif;
+    color: #5C5B3D;
+  }
+
+  #content {
+    grid-column: 1 / span 7;
+  }
+
+  aside {
+    grid-column: 8 / span 12;
+    background-color: #a3a3a394;
   }

@@ -14,9 +14,8 @@
         <fieldset id="detail">
             <legend>Unit Converter (AJAX)</legend>  
             <br>
-            
             <label class="formlabel" for="fromvalue">From Value: </label>
-            <input type="text" id="fromvalue" name="Operand1" size="15" maxlength="15"
+            <input type="text" id="fromvalue" name="fromvalue" size="15" maxlength="15"
                     data-rule-required="true"  data-msg-required="Value is Required" 
                     data-rule-number="true" data-msg-number="Value must be a Number">
             <label for="fromvalue" class="error" id="Operand1Msg"></label>
@@ -30,45 +29,45 @@
                 <label for="frommeters">
                     <input type="radio" name="Operator" id="frommeters" value = "frommeters">meters
                 </label>
-                <label for="AddOperator">
+                <label for="fromkilometers">
                     <input type="radio" name="Operator" id="fromkilometers" value = "fromkilometers">kilometers
                 </label>
-                <label for="AddOperator">
+                <label for="frominches">
                     <input type="radio" name="Operator" id="frominches" value = "frominches">inches
                 </label>
-                <label for="AddOperator">
+                <label for="fromfeet">
                     <input type="radio" name="Operator" id="fromfeet" value = "fromfeet">feet
                 </label>
-                <label for="AddOperator">
+                <label for="fromyards">
                     <input type="radio" name="Operator" id="fromyards" value = "fromyards">yards
                 </label>
-                <label for="AddOperator">
+                <label for="frommiles">
                     <input type="radio" name="Operator" id="frommiles" value = "frommiles">miles
                 </label>
             <label for="Operator" class="error" id="OperatorMsg"></label>
             <br><br>
       
             <label class="formlabel">To Unit: </label>
-            <label for="fromcentimeters">
+            <label for="tocentimeters">
                 <input type="radio" name="Operator" id="tocentimeters" value = "tocentimeters"
                        data-rule-required="true" data-msg-required="To Unit is Required" />centimeters
             </label>
-            <label for="frommeters">
+            <label for="tometers">
                 <input type="radio" name="Operator" id="tometers" value = "tometers">meters
             </label>
-            <label for="AddOperator">
+            <label for="tokilometers">
                 <input type="radio" name="Operator" id="tokilometers" value = "tokilometers">kilometers
             </label>
-            <label for="AddOperator">
+            <label for="toinches">
                 <input type="radio" name="Operator" id="toinches" value = "toinches">inches
             </label>
-            <label for="AddOperator">
+            <label for="tofeet">
                 <input type="radio" name="Operator" id="tofeet" value = "tofeet">feet
             </label>
-            <label for="AddOperator">
+            <label for="toyards">
                 <input type="radio" name="Operator" id="toyards" value = "toyards">yards
             </label>
-            <label for="AddOperator">
+            <label for="tomiles">
                 <input type="radio" name="Operator" id="tomiles" value = "tomiles">miles
             </label>
         <label for="Operator" class="error" id="OperatorMsg"></label>

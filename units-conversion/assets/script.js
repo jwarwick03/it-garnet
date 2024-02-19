@@ -8,23 +8,33 @@ function calculate() {
     if (form.valid()) {
         
         // Operand 1
-        var operand1 = document.getElementById("Operand1").value;
+        var fromvalue = document.getElementById("fromvalue").value;
 
         // Operator
         // Get the value associated with the operator that was checked (+, -, *, or /)
         var operator;
-        if (document.getElementById("AddOperator").checked) {
-            operator = document.getElementById("AddOperator").value;
+        if (document.getElementById("fromcentimeters").checked) {
+            operator = document.getElementById("fromcentimeters").value;
         }
-        if (document.getElementById("SubtractOperator").checked) {
-            operator = document.getElementById("SubtractOperator").value;
+        if (document.getElementById("frommeters").checked) {
+            operator = document.getElementById("frommeters").value;
         }
-        if (document.getElementById("MultiplyOperator").checked) {
-            operator = document.getElementById("MultiplyOperator").value;
+        if (document.getElementById("fromkilometers").checked) {
+            operator = document.getElementById("fromkilometers").value;
         }
-        if (document.getElementById("DivideOperator").checked) {
-            operator = document.getElementById("DivideOperator").value;
+        if (document.getElementById("frominches").checked) {
+            operator = document.getElementById("frominches").value;
         }
+        if (document.getElementById("fromfeet").checked) {
+            operator = document.getElementById("fromfeet").value;
+        }
+        if (document.getElementById("fromyards").checked) {
+            operator = document.getElementById("fromyards").value;
+        }
+        if (document.getElementById("frommiles").checked) {
+            operator = document.getElementById("frommiles").value;
+        }
+
         
         // Operand 2
         var operand2 = document.getElementById("Operand2").value;
@@ -36,7 +46,7 @@ function calculate() {
 async function CalculateResult(operand1, operator, operand2) {
         
         // URL and method used with AJAX Call
-        var myURL = "https://brucebauer.info/assets/ITEC3650/ajaxcalculator.php";
+        var myURL = "http://brucebauer.info/assets/ITEC3650/gethint.php";
 
         /* AJAX calculator requires Operand1, Operator, and Operand2 */
         myURL = myURL + "?Operand1=" + encodeURIComponent(operand1) + "&Operator=" + encodeURIComponent(operator) + "&Operand2=" + encodeURIComponent(operand2);

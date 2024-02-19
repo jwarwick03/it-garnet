@@ -51,13 +51,18 @@ h2 {
 }
 
 #thomas {
+    background-color: #1273697a;
+    border-radius: 5px;
     width: 50%;
     display:flex;
     flex-wrap:wrap;
     gap:10px;
+    padding: 20px;
 }
 
 #bruce {
+    background-color: #1273697a;
+    border-radius: 5px;
     width: 50%;
     display:flex;
     flex-wrap:wrap;
