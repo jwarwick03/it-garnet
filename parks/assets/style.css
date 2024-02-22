@@ -60,6 +60,14 @@ html {
     text-decoration: none;
   }
 
+  .email {
+    color: #5C5B3D;
+  }
+
+  .email:hover {
+    color:#FDB827;
+  }
+
   nav ul{
     padding: 20px;
     color: #008061;
