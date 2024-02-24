@@ -9,14 +9,12 @@
 
 
 
-/* Type Selector */
 body {
     background-color: #BFBFBF;
 }
 
-/* ID Selector */
 
-#main-heading {
+h1.primary {
     color: #10403B;
     font-family: 'Rubik', sans-serif;
     text-shadow: 1px 1px #000;
@@ -32,10 +30,6 @@ body {
 
 /* --- psuedo selector --- */
 
-a:link, a:visited{
-    color: #127369;
-}
-
 main {
     width:80vw;
     margin:auto
@@ -46,32 +40,37 @@ main {
 }
 
 h2 {
-    display:block;
-    
+    width:80%;
+    align-items:center;
 }
 
 #thomas {
     background-color: #1273697a;
     border-radius: 5px;
+    margin-right: 20px;
     width: 50%;
     display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+    flex-wrap: wrap;
     padding: 20px;
+    gap:10px;
 }
 
 #bruce {
     background-color: #1273697a;
     border-radius: 5px;
     width: 50%;
+    height: 60vh;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    padding:20px;
     gap:10px;
 }
 
 a {
     text-decoration: none;
     background-color: #8AA6A3;
+    color:#10403B;
+    height:fit-content;
     padding: 20px;
     border-radius: 5px;
 }
