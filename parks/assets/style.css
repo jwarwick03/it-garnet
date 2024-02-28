@@ -47,7 +47,6 @@ html {
     width: 80vw;
     margin:auto;
     padding: 10px;
-    border: 1px solid #000;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
   }
@@ -55,6 +54,7 @@ html {
   body {
     font-family: "Noto Sans", sans-serif;
     background-color: var(--main-bg-color);
+    color: var(--primary-type-color);
   }
 
   header.primary, #colophon {
@@ -74,9 +74,12 @@ html {
     color:#FDB827;
   }
 
+  header.primary {
+    background-color: #acacac;
+  }
+
   nav ul{
     padding: 20px;
-    color: #008061;
     background-color: ;
     display: flex;
     gap: 30px;
@@ -87,18 +90,22 @@ html {
     list-style-type: none;
   }
 
-  nav a{color: #008061;}
+  nav a {
+    color: var(--primary-type-color);
+  }
+
+  nav a:hover {
+    border-bottom: 2px solid var(--accent-color-2)
+  }
 
   .primary h1 {
     font-family: "Inter", sans-serif;
     font-size: 2.8rem;
-    color: #5C5B3D;
     text-align: center;
   }
 
   h2 {
     font-family: "DM Sans", sans-serif;
-    color: #5C5B3D;
   }
 
   #content {
@@ -107,5 +114,19 @@ html {
 
   aside {
     grid-column: 8 / span 12;
-    background-color: #a3a3a394;
+  }
+
+  .line-break {
+    border-bottom: 1px solid #000;
+    padding-bottom: 40px;
+  }
+
+  #colophon, #colophon a {
+    background-color: var(--primary-type-color);
+    color: var(--main-bg-color);
+  }
+
+  #colophon ul {
+    display: flex;
+    justify-content: space-between;
   }
