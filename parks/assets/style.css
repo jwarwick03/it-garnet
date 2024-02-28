@@ -10,6 +10,12 @@ font-family: "Noto Sans", sans-serif;  (p)
 font-family: "DM Sans", sans-serif;  (h2)
 */
 
+:root {
+  --main-bg-color: #FDFBEE;
+  --primary-type-color: #5C5B3D;
+  --accent-color-1: #FDB827;
+  --accent-color-2: #008061;
+}
 
 /* ---------------Box Sizing----------------- */
 
@@ -48,12 +54,12 @@ html {
 
   body {
     font-family: "Noto Sans", sans-serif;
-    background-color: #FDFBEE;
+    background-color: var(--main-bg-color);
   }
 
   header.primary, #colophon {
     grid-column: 1 / span 12;
-    background-color: #ECEADC;
+    
   }
 
   a {
@@ -71,6 +77,7 @@ html {
   nav ul{
     padding: 20px;
     color: #008061;
+    background-color: ;
     display: flex;
     gap: 30px;
     justify-content: center;

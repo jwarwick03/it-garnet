@@ -8,27 +8,28 @@
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; }
 
 
+:root {
+    --main-bg-color: #222;
+    --primary-type-color: #F5EFDF;
+    --accent-color-1: #888888;
+    --accent-color-2: #d45320;
+}
 
 body {
-    background-color: #BFBFBF;
+    background-color: var(--main-bg-color);
+    color: var(--primary-type-color);
+    font-family: "Bakbak One", sans-serif;
 }
-
 
 h1.primary {
-    color: #10403B;
-    font-family: 'Rubik', sans-serif;
-    text-shadow: 1px 1px #000;
+    font-family: "Bowlby One SC", sans-serif;
+    font-size: 2.5rem;
 }
-
-
-/* Class Selector */
 
 .primary {
-    border: 2px solid #637371;
+    border-bottom: 2px solid var(--accent-color-2);
     padding: 10px;
 }
-
-/* --- psuedo selector --- */
 
 main {
     width:80vw;
@@ -40,12 +41,14 @@ main {
 }
 
 h2 {
-    width:80%;
-    align-items:center;
+    width:100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color:#000;
 }
 
 #thomas {
-    background-color: #1273697a;
+    background-color: var(--accent-color-1);
     border-radius: 5px;
     margin-right: 20px;
     width: 50%;
@@ -53,24 +56,27 @@ h2 {
     flex-wrap: wrap;
     padding: 20px;
     gap:10px;
+    flex-flow: wrap;
 }
 
 #bruce {
-    background-color: #1273697a;
+    background-color: var(--accent-color-1);
     border-radius: 5px;
     width: 50%;
-    height: 60vh;
     display:flex;
     flex-wrap: wrap;
     padding:20px;
     gap:10px;
+    flex-flow: wrap;
 }
+
 
 a {
     text-decoration: none;
-    background-color: #8AA6A3;
-    color:#10403B;
+    background-color: #b4b4b4;
+    color:#000;
     height:fit-content;
+    width:fit-content;
     padding: 20px;
     border-radius: 5px;
 }
