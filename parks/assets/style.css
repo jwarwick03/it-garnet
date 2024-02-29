@@ -80,7 +80,6 @@ html {
 
   nav ul{
     padding: 20px;
-    background-color: ;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -109,7 +108,7 @@ html {
   }
 
   #content {
-    grid-column: 1 / span 7;
+    grid-column: 1 / span 7; 
   }
 
   aside {
