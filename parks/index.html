@@ -7,13 +7,14 @@
   <meta name="author" content="Joel Warwick">
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
 </head>
 <body>
-  <main>
     <header class="primary">
         <h1>Mount Nebo State Park</h1>
       <nav>
@@ -24,6 +25,7 @@
         </ul>
       </nav>
     </header>
+    <main>
     <section id="content" class="container">
       <h2>What to know</h2>
         <p>Situated in the Arkansas River Valley just 45 minutes from Arkansas Wine Country, this state 
@@ -41,10 +43,18 @@
         of the Arkansas River from the Rim Trail. Learn more about the Trail of Tears in Arkansas state 
         parks.</p>
     </section>
+    <div class="fade container">
+      <div><img src="assets/img/nebo-1.webp" alt="Mt Nebo" width="700" height="525"></div>
+      <div><img src="assets/img/nebo-2.jpg" alt="Mt Nebo" width="700" height="525"></div>
+      <div><img src="assets/img/nebo-3.jpg" alt="Mt Nebo" width="700" height="525"></div>
+      <div><img src="assets/img/nebo-4.jpg" alt="Mt Nebo" width="700" height="525"></div>
+      <div><img src="assets/img/nebo-5.jpg" alt="Mt Nebo" width="700" height="525"></div>
+      <div><img src="assets/img/nebo-6.jpg" alt="Mt Nebo"></div>
+    </div>
     <aside>
       <div class="container">
         <h2>Address:</h2>
-        <p class="underline">16728 West State Hwy. 155
+        <p class="line-break">16728 West State Hwy. 155
           Dardanelle, AR 72834</p>
         <h2>Phone:</h2>
         <p class="line-break">479-229-3655</p>
@@ -65,6 +75,7 @@
         <p>Tennis Courts: Open all year</p>
       </div>
     </aside>
+  </main>
     <footer id="colophon">
       <ul>
         <li><a href="">Arkansas.com</a></li>
@@ -75,9 +86,12 @@
       </ul>
       <p>ARKANSAS STATE PARKS 1 Capitol Mall - Little Rock, Arkansas 72201</p>
       <p>1-888-287-2757 (TDD) / parks.info@arkansas.gov</p>
-      <h6>&copy; 2024</h6>
+      <h6 class="copyright">&copy; 2024 Arkansas State Parks</h6>
     </footer>
-  </main>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+<script src="assets/script.js"></script>
 </body>
 
 </html>
