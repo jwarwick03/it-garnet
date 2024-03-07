@@ -73,27 +73,42 @@ html {
 
   header.primary {
     width: 100vw;
-    height: 80vh;
-    background-image: url("../assets/img/nebo-header.webp");
-    background-size: cover;
-    background-position: center center;
+    height: 100vh;
     position:relative;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    background-color: #faf6dd;
   }
 
   nav ul{
+    grid-column: 1 / span 2;
+    margin:0;
+    width: 100vw;
     padding: 20px;
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    justify-content: flex-start;
+    position: absolute;
+    top:0;
   }
 
   nav li {
     list-style-type: none;
   }
 
+  nav a.logo {
+    background-image: url("../assets/img/ar-state-parks-logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+	  display: block;
+	  height: 100px;
+	  text-indent: 100%;
+	  white-space: nowrap;
+	  overflow: hidden;
+  }
+
   nav a {
-    color: #fff;
-    font-size: 1.5rem;
+    color: #000;
+    font-size: 1.3rem;
   }
 
   nav a:hover {
@@ -101,10 +116,28 @@ html {
   }
 
   .primary h1 {
+    grid-column: 1;
     font-family: "Inter", sans-serif;
-    font-size: 2.8rem;
-    text-align: center;
-    padding-top: 300px;
+    font-size: 4rem;
+    text-align: left;
+    padding: 250px 0px 0px 100px;
+    line-height: 22pt;
+  }
+
+  h1 span.explore {
+    color: var(--accent-color-1);
+  }
+
+  h1 span.nebo {
+    padding-left: 30px;
+  }
+
+  header.primary img {
+    grid-column: 2;
+    position: absolute;
+    top: 30%;
+    right:10%;
+    border-radius: 10px;
   }
 
   h2 {
