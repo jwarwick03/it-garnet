@@ -1,58 +1,101 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Currency Value History">
-    <meta name="author" content="Bruce Bauer">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Currency Value History Project" />
+    <meta name="author" content="Joel Warwick" />
     <title>Currency Value History</title>
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <form id="myform">
-        <div class="formcontainer">
-            <h1>Currency Value History</h1>
-            <label class="formlabel" for="BaseCurrency" >Base Currency: </label>
-            <select name="BaseCurrency" id="BaseCurrency"
-            data-rule-required="true"  data-msg-required="Base Currency is Required" >
+      <div class="formcontainer">
+        <h2>Currency Value History</h2>
+        <label for="baseCurrency" class="formlabel">Base Currency: </label>
+        <input
+          list="baseCurrencyList"
+          placeholder="Select a Currency..."
+          id="baseCurrency"
+          name="baseCurrency"
+          data-rule-required="true"
+          data-msg-required="Base currency is Required"
+        />
+        <datalist id="baseCurrencyList">
             <option value="USD">US Dollar</option>
             <option value="EUR">Euro</option>
             <option value="CAD">Canadian Dollar</option>
             <option value="AUD">Australia Dollar</option>
             <option value="JPY">Japan Yen</option>
-            </select>
-            <label for="BaseCurrency" class="error"></label>
-            <br>
-            <label class="formlabel" for="ConverttoCurrency" >Convert to Currency: </label>
-            <select name="ConverttoCurrency" id="ConverttoCurrency"
-            data-rule-required="true"  data-msg-required="Convert to Currency is Required" >
+        </datalist>
+
+        <label class="error" for="baseCurrency" id="baseCurrencyError"></label
+        ><br />
+        <label for="toCurrency" class="formlabel">Convert to Currency: </label>
+        <input
+          list="toCurrencyList"
+          placeholder="Select a Currency..."
+          id="toCurrency"
+          name="toCurrency"
+          data-rule-required="true"
+          data-msg-required="To currency is Required"
+        />
+        <datalist id="toCurrencyList">
             <option value="USD">US Dollar</option>
             <option value="EUR">Euro</option>
             <option value="CAD">Canadian Dollar</option>
             <option value="AUD">Australia Dollar</option>
             <option value="JPY">Japan Yen</option>
-            </select>
-            <label for="ConverttoCurrency" class="error"></label>
-            <br>
-            <label for="FromDate" class="formlabel" >From Date: </label>
-            <input type="text" id="FromDate" name="FromDate" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="From Date is Required">
-            <label class="error" for="FromDate" id="FromDateError"></label>
-            <br>
-            <label for="ToDate" class="formlabel" >To Date: </label>
-            <input type="text" id="ToDate" name="ToDate" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="To Date is Required">
-            <label class="error" for="ToDate" id="ToDateError"></label>
-            <br><br>
-            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="GetStock();">
-            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
-            <hr>
-            <br>
+        </datalist>
+        <label class="error" for="toCurrency" id="toCurrencyError"></label
+        ><br />
+            <label class="formlabel">From Date:</label>
+        <input
+          type="date"
+          name="FromDate"
+          id="FromDate"
+          data-rule-required="true"
+          data-msg-required="From Date is Required"
+        />
+        <label id="FromDateError" for="FromDate" class="error"></label>
+        <br />
+        <label class="formlabel">To Date:</label>
+        <input
+          type="date"
+          name="ToDate"
+          id="ToDate"
+          data-rule-required="true"
+          data-msg-required="To Date is Required"
+        />
+        <label id="ToDateError" for="ToDate" class="error"></label>
+        <br /><br />
+        <input
+          type="button"
+          value="Show Results"
+          id="showResults"
+          name="showResults"
+          onclick="getResults()"
+        />
+        <input
+          type="button"
+          value="Clear"
+          id="clear"
+          name="clear"
+          onclick="clearForm()"
+        />
+        <hr />
+        <br />
+        <div class="clearfix">
+          <div class="img-container">
+            <canvas id="chartjs-0" width="400" height="400"></canvas>
+          </div>
         </div>
+      </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
