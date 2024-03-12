@@ -14,7 +14,7 @@ async function getResults() {
         var ToDate = document.getElementById("ToDate").value;
 
         var myURL1 = "https://api.polygon.io/v2/aggs/ticker/C:" + baseCurrency + toCurrency + "/range/1/day/" + FromDate + "/" + ToDate + apiKey;
-        // https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/day/2023-01-09/2023-01-09?apiKey=XEWlJHZok6skAUqed_1nAZu57I2KBZHn
+        //https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/day/2023-01-09/2023-01-09?apiKey=XEWlJHZok6skAUqed_1nAZu57I2KBZHn
         
         /* Make the AJAX call */
         var msg1Object = await fetch(myURL1);
