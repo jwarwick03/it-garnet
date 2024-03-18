@@ -108,7 +108,7 @@ html {
   }
 
   nav a {
-    color: #000;
+    color: var(--primary-type-color);
     font-size: 1.3rem;
   }
 
