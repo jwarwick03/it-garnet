@@ -72,24 +72,24 @@ html {
   }
 
   header.primary {
-    width: 100vw;
     height: 100vh;
     position:relative;
     background-color: #faf6dd;
   }
 
-  .heading {
-    display:grid;
-    grid-template-columns: 40% 60%;
+  header.primary nav {
+    width: 100%;
+    position:absolute;
+    top:0;
+    display:flex;
+    padding: 0 40px;
+    align-items: center;
   }
 
-  nav ul {
-    margin:0;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top:0;
+  header.primary nav ul {
+    margin-left:auto;
+    display:flex;
+    gap:50px;
   }
 
   nav li {
@@ -117,12 +117,12 @@ html {
   }
 
   .primary h1 {
-    grid-column: 1;
     font-family: "Inter", sans-serif;
     font-size: 4rem;
     text-align: left;
     padding: 250px 0px 0px 100px;
     line-height: 22pt;
+    margin:0;
   }
 
   h1 span.explore {
@@ -133,12 +133,18 @@ html {
     padding-left: 30px;
   }
 
-  header.primary img {
-    grid-column: 2;
-    position: absolute;
-    top: 30%;
-    right:10%;
+  .heading {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position:absolute;
+    top: 25%;
+  }
+
+  .heading img {
     border-radius: 20px;
+    
   }
 
   h2 {
@@ -157,6 +163,7 @@ html {
     width:70vw;
     /* Set Max Content Width */
     max-width:700px;
+    max-height: 500px;
   }
 
 /* Customize Previous/Next/Dots/Autoplay */
