@@ -1,0 +1,86 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------------Utility Classes----------------- */
+
+.container{
+  margin:auto;
+}
+
+.error {
+  color: red;
+  padding-left: 5px;
+}
+  
+  /* ---------------Responsive Images----------------- */
+  
+  img{
+    max-width: 100%;
+    height:auto;
+  }
+
+  /* ----------------Body Style---------------- */
+
+  body {
+    background-color: #222;
+    color: #fff8e6;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  main {
+    width: 80vw;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 2px solid #fff8e6;
+    border-radius: 15px;
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    font-size: .8rem;
+  }
+
+  th, td {
+    border: 1px solid #bbbbbb;
+    padding: 15px;
+  }
+
+  .searchForm label {
+    padding: 10px;
+  }
+
+  #picdate {
+    margin-top: 10px;
+  }
+
+  #searchbtn, #clearbtn {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+  }
